@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+
+    url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=1974&auto=format&fit=crop');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.container{
+
+    width: 500px;
+
+    padding: 60px 50px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.10);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.4);
+}
+
+h1{
+
+    color: white;
+
+    font-size: 52px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+    0 4px 10px rgba(0,0,0,0.5);
+}
+
+.tagline{
+
+    color: #ffb703;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+h3{
+
+    color: #e2e8f0;
+
+    margin-bottom: 40px;
+
+    font-size: 20px;
+
+    letter-spacing: 1px;
+}
+
+.button-container{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.btn{
+
+    text-decoration: none;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffb703,
+        #fb8500
+    );
+
+    box-shadow:
+    0 8px 20px rgba(251,133,0,0.35);
+
+    transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+
+    display: inline-block;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.btn:hover{
+
+    transform: translateY(-3px);
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffca3a,
+        #ff7b00
+    );
+
+    box-shadow:
+    0 12px 24px rgba(251,133,0,0.45);
+}
+
+.btn:active{
+
+    transform: translateY(0px) scale(0.98);
+}
+
+
+@media(max-width:600px){
+
+    .container{
+
+        width: 90%;
+
+        padding: 40px 25px;
+    }
+
+    h1{
+
+        font-size: 38px;
+    }
+
+    .tagline{
+
+        font-size: 18px;
+    }
+
+    h3{
+
+        font-size: 17px;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+/* 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff7ed,
+        #fffbeb,
+        #f8fafc
+    );
+
+    padding:20px;
+}
+
+.container{
+
+    width:100%;
+    max-width:700px;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:32px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+}
+
+h1{
+
+    font-size:60px;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+}
+
+.tagline{
+
+    font-size:24px;
+
+    color:#fb8500;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+h3{
+
+    color:#64748b;
+
+    margin-bottom:40px;
+
+    font-size:22px;
+}
+
+.btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:220px;
+
+    padding:16px;
+
+    margin:10px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:700;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffb703,
+        #fb8500
+    );
+
+    transition:0.3s ease;
+
+    box-shadow:
+    0 8px 20px rgba(251,133,0,0.30);
+}
+
+.btn:hover{
+
+    transform:translateY(-4px) scale(1.03);
+} */

@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'update_menu.css' %}">
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>dish name</th>
+            <th>description</th>
+            <th>price</th>
+            <th>Veg/Non-Veg></th>
+            <th>picture</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for item in itemlist %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.description}}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.vegeterian }}</td>
+            <td>
+                <img src="{{ item.picture }}" alt="no img of dish right now">
+            </td>
+        </tr>
+        {% endfor %}
+         </tbody>
+    </table>
+
+
+
+    <h2>Add Items:</h2>
+    <form action="{% url 'update_menu' restaurant.id %}" method="POST">
+        {% csrf_token %}
+        <label for="name">Dish name
+            <input type="text" placeholder="input dish name" name="name" id="name" required>
+        </label> <br><br>
+        <label for="description">Description
+            <textarea type="text" placeholder="write your discription here" name="description" id="description" required></textarea>
+        </label> <br><br>
+        <label for="price">Dish Price:
+            <input type="number" placeholder="" name="price" id="price" required>
+        </label> <br><br>
+        <label for="vegeterian">Vegeterian:
+            <input type="radio" placeholder="" name="vegeterian" id="vegeterian" value="Veg">
+        </label>
+        <label for="Non-Veg"> Non-Vegeterian:
+            <input type="radio" name="vegeterian" id="Non-Veg" value="Non-veg">
+        </label>
+        <br><br>
+        <label for="picture">Image url:
+            <input type="url" placeholder="" name="picture" id="picture" required>
+        </label> <br><br>
+        <button type="submit">Add Item</button>
+    </form>
+</body>
+</html>

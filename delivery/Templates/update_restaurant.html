@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'update_restaurant.css' %}">
+</head>
+<body>
+    <form action="{% url 'update_restaurant' restaurant.id %}" method="POST">
+        {% csrf_token %}
+        <label for="name">Restaruant name</label>
+        <input type="text" name="restaurant name" placeholder="enter restaurant name" id="name" value="{{restaurant.name}}">
+        <br>
+        <label for="picture">picture
+            <input type="text" id="picture" name="picture" value="{{restaurant.picture}}">
+        </label> <br>
+        <label for="cuisine">cuisine
+            <input type="text" id="cuisine" name="cuisine" value="{{restaurant.cuisine}}">
+        </label> <br>
+        <label for="rating">Rating
+            <input type="number" name="rating" id="rating" min="0" max="5" step="0.5" value="{{restaurant.rating}}">
+        </label><br>
+        <button type="submit">Update details</button>
+    </form>
+    
+</body>
+</html>

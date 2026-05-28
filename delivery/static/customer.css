@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#fffaf5;
+
+    font-family:Arial;
+}
+
+h1{
+
+    font-size:48px;
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+}
+
+p{
+
+    font-size:22px;
+
+    color:#64748b;
+}

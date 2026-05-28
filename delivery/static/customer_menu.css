@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    padding:40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffedd5
+    );
+}
+
+h3{
+
+    font-size:34px;
+
+    color:#ea580c;
+
+    margin-bottom:25px;
+}
+
+.cart-link{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    margin-bottom:30px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f97316,
+        #ea580c
+    );
+
+    color:white;
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.cart-link:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(234,88,12,0.3);
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+thead{
+
+    background:
+    linear-gradient(
+        135deg,
+        #fb8500,
+        #f97316
+    );
+}
+
+thead th{
+
+    padding:22px;
+
+    color:white;
+
+    font-size:15px;
+}
+
+td{
+
+    padding:24px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e2e8f0;
+
+    color:#475569;
+}
+
+tbody tr:hover{
+
+    background:#fff7ed;
+}
+
+img{
+
+    width:150px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    transition:0.3s;
+}
+
+img:hover{
+
+    transform:scale(1.05);
+}
+
+.add-cart-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.add-cart-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(34,197,94,0.3);
+}

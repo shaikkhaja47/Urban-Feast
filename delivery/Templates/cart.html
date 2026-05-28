@@ -1,0 +1,41 @@
+ {% load static%}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="{% static 'cart.css' %}">
+</head>
+<body>
+
+    <p>hii {{username }} here are your items </p>
+    <table border="5">
+        <thead>
+        
+        <tr>
+            <th>Item image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for r in itemlist %}
+            <tr>
+                <td>
+                    <img src="{{ r.picture }}" alt="img not found">
+                </td>
+                <td>{{ r.name }}</td>
+                <td>{{ r.description }}</td>
+                <td> {{ r.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <h2 class="total">Total Price: ₹{{total_price}}</h2>
+        <form action="{% url 'checkout' username %}">
+            <input class="checkout-btn" type="submit" value="CHECK-OUT">
+        </form>
+    </table>
+</body>
+</html>

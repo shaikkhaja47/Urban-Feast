@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Feast</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+    <h1>UrbanFeast &#127829; &#127831; </h1>
+    <p class="tagline">where every flavor comes alive..&#127849; &#127828;</p>
+    <h3><em>Every Bite Tells a Story</em></h3> 
+    <div>
+    <a href="{% url 'open_signup' %}" class="btn">Sign up</a> 
+    <a href="{% url 'open_signin' %}" class="btn">Sign in</a>
+    </div>
+    </div>
+</body>
+</html>
